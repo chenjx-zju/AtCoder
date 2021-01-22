@@ -23,24 +23,25 @@ def solve():
 	ls, lt = len(s), len(t)
 	dp = [[0 for _ in range(lt+1)] for _ in range(ls+1)]
 
-	for i in range(1, ls+1):
-		for j in range(1, lt+1):
-			dp[i][j] = max(dp[i-1][j], dp[i][j-1])
-			if s[i-1] == t[j-1]:
-				dp[i][j] = max(dp[i][j], dp[i-1][j-1] + 1)
-	i, j = 1, 1
-	while i <= ls and j <= lt:
-		if s[i-1] == t[j-1]:
-			print(s[i-1], end="")
-			i += 1
-			j += 1
-		elif i < ls and dp[i][j] == dp[i][j]:
+	for i in range(ls-1, -1, -1):
+		for j in range(lt-1, -1, -1):
+			dp[i][j] = max(dp[i+1][j], dp[i][j+1])
+			if s[i] == t[j]:
+				dp[i][j] = max(dp[i][j], dp[i+1][j+1] + 1)
+	
+	# for row in dp:
+	# 	print(row)
+
+	i, j = 0, 0
+	while i < ls and j < lt:
+		if s[i] == t[j]:
+			print(s[i], end='')
+			i, j = i+1, j+1
+		elif dp[i][j] == dp[i+1][j]:
 			i += 1
 		else:
 			j += 1
 	print()
-
-	# print(dp[-1][-1])
 
 
 # tcase()
