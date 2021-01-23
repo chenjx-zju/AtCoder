@@ -41,7 +41,13 @@
 
 ## I - Coins
 
+二维dp，注意迭代顺序。
+
 ## J - Sushi
+
+考虑到堆数量相同堆等价，统计数量为1 2 3的堆的数量记录状态。
+
+三维dp，递归TLE。注意根据状态转移公式决定迭代的顺序。
 
 ## K - Stones
 
@@ -53,8 +59,24 @@
 
 ## O - Matching
 
-## 
+## P - Independent Set
 
-## 
+## Q - Flowers
 
+## R - Walk
 
+## S - Digit Sum
+
+## T - Permutation
+
+## U - Grouping
+
+## V - Subtree
+
+## W - Intervals
+
+## X - Tower
+
+## Y - Grid 2
+
+## Z - Frog 3
