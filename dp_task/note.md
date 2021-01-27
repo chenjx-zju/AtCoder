@@ -53,7 +53,11 @@
 
 ## K - Stones
 
+一维dp，dp[k]代表剩余k个，先手胜。如果有一个dp[k-a]为False，dp[k]为True。
+
 ## L - Deque
+
+二维dp，第一维按照区间长度遍历。
 
 ## M - Candies
 

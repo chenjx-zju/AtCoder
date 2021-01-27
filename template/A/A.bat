@@ -1,0 +1,1 @@
+start cmd /k "ECHO Result1 && python A.py < A1.txt "

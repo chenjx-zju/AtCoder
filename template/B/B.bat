@@ -1,0 +1,1 @@
+start cmd /k "ECHO Result1 && python B.py < B1.txt && ECHO Result2 && python B.py < B2.txt"
