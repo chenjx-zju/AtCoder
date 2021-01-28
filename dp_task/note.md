@@ -61,7 +61,11 @@
 
 ## M - Candies
 
+dp(n, k)  = dp(n-1, k) + dp(n-1, k) + ... + dp(n-1, k-arr[n])，等式右边可以有前缀和省时间，时间复杂度O(NK)
+
 ## N - Slimes
+
+二维dp，dp(i, j) = min(dp(i, k) + dp(k+1, j)) for k in range(i, j)
 
 ## O - Matching
 
