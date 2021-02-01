@@ -69,6 +69,8 @@ dp(n, k)  = dp(n-1, k) + dp(n-1, k) + ... + dp(n-1, k-arr[n])，等式右边可�
 
 ## O - Matching
 
+状态压缩dp，状态中1的个数可以表明第几行，顺序遍历状态。dp[i] = (dp[i] + dp[i ^ (1 << j)]) % mod
+
 ## P - Independent Set
 
 ## Q - Flowers
