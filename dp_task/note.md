@@ -73,7 +73,11 @@ dp(n, k)  = dp(n-1, k) + dp(n-1, k) + ... + dp(n-1, k-arr[n])，等式右边可�
 
 ## P - Independent Set
 
+dfs遍历树，倒序bottom up dp染色
+
 ## Q - Flowers
+
+dp[h] = max(dp[0...h-1]) + val[h]。线段树维护即可（不会写抄的BIT模板）
 
 ## R - Walk
 
