@@ -81,6 +81,8 @@ dp[h] = max(dp[0...h-1]) + val[h]。线段树维护即可（不会写抄的BIT�
 
 ## R - Walk
 
+倍增法生成路径长度为1 << n的矩阵，位运算把各矩阵相乘。（单位矩阵是主对角线为1的矩阵
+
 ## S - Digit Sum
 
 ## T - Permutation
