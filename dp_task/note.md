@@ -91,6 +91,8 @@ dp[h] = max(dp[0...h-1]) + val[h]。线段树维护即可（不会写抄的BIT�
 
 ## U - Grouping
 
+首先计算子集对应的分数，状压dp，遍历子集 dp[state] = max(dp[state], memo[sub] + dp[state ^ sub])
+
 ## V - Subtree
 
 ## W - Intervals
