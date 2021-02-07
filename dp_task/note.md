@@ -85,6 +85,8 @@ dp[h] = max(dp[0...h-1]) + val[h]。线段树维护即可（不会写抄的BIT�
 
 ## S - Digit Sum
 
+数位dp，dp(index, smaller, modD)，根据smaller遍历index位的num，状态转移
+
 ## T - Permutation
 
 ## U - Grouping
