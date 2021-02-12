@@ -89,6 +89,12 @@ dp[h] = max(dp[0...h-1]) + val[h]。线段树维护即可（不会写抄的BIT�
 
 ## T - Permutation
 
+考虑定义dp(i, j)是使用0 ~ i的排列满足了前 i - 1 个符号的要求，且最后一个为j的方案数。
+
+然后以 j - 1 为分界线，把 j - 1之后的数都加一，不破坏整体关系的前提下消除了 j，再把 j 放到最后一位。
+
+dp(i+1, j) = dp(i, j...i) or dp(i, 0...j-1)。前缀和维护结果。
+
 ## U - Grouping
 
 首先计算子集对应的分数，状压dp，遍历子集 dp[state] = max(dp[state], memo[sub] + dp[state ^ sub])
