@@ -109,4 +109,10 @@ dp(i+1, j) = dp(i, j...i) or dp(i, 0...j-1)。前缀和维护结果。
 
 ## Y - Grid 2
 
+首先，总路线为math.comb(x+y,  x)。需要排除各个经过障碍物的路线，dp[i] 代表从起点到 i 路线中第一个障碍物为 i 的路线数量。
+
+得到dp[i] = all route - (dp[j] * (all route from j -> i) for every j < i).
+
+把终点加入障碍物的数组中排序做N2 dp。组合数需要用到乘法逆元 n ^ (p - 2). (p为质数 -> n ^ (p - 1) === 1)
+
 ## Z - Frog 3
