@@ -61,7 +61,7 @@
 
 ## M - Candies
 
-dp(n, k)  = dp(n-1, k) + dp(n-1, k) + ... + dp(n-1, k-arr[n])，等式右边可以有前缀和省时间，时间复杂度O(NK)
+dp(n, k)  = dp(n-1, k) + dp(n-1, k-1) + ... + dp(n-1, k-arr[n])，等式右边可以有前缀和省时间，时间复杂度O(NK)
 
 ## N - Slimes
 
@@ -101,7 +101,11 @@ dp(i+1, j) = dp(i, j...i) or dp(i, 0...j-1)。前缀和维护结果。
 
 ## V - Subtree
 
+不会
+
 ## W - Intervals
+
+线段树，不会
 
 ## X - Tower
 
@@ -113,6 +117,10 @@ dp(i+1, j) = dp(i, j...i) or dp(i, 0...j-1)。前缀和维护结果。
 
 得到dp[i] = all route - (dp[j] * (all route from j -> i) for every j < i).
 
-把终点加入障碍物的数组中排序做N2 dp。组合数需要用到乘法逆元 n ^ (p - 2). (p为质数 -> n ^ (p - 1) === 1)
+把终点加入障碍物的数组中排序做N2 dp。
+
+算组合数需要用到乘法逆元 n ^ (p - 2). (p为质数 -> n ^ (p - 1) === 1)
 
 ## Z - Frog 3
+
+斜率优化，不会
